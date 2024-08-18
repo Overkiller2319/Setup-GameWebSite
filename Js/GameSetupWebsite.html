@@ -1,0 +1,143 @@
+<!DOCTYPE = html>
+<html>
+    <head>
+        <link rel="stylesheet" href="gamestyle.css"  href="tiro.css">
+      
+        <audio id="music"controls src="Game-OST.mp3" type="audio/mp3" >autoplay</audio>
+              
+            <section id="jogo-image">
+
+                
+                <p id="end" style="display: none">ZEROU  o!GAME</p> <!--Mensagem FINAL DO JOGO-->
+
+                <img id="nuvem-image" src="cloud.png">
+                
+                <a href="#" target="_self" onclick="interact()">
+                <img id="NPC" src="npc.png">
+                </a>
+
+
+                
+
+
+                <img id="gamingSprite" src="Sprite.png"><button id="sprite-button" onclick="cont_interact()" style="display: none;"></button></img>
+                
+                <div id= "foot-game"></div>
+                
+
+                <a id="controle-print2" href="#" onclick="printGame1()"><img id="controleSprite" src="game-ring.png">
+                </a>
+                <a id="controle-print2" href="#" onclick="printGame2()" ><img id="controleSprite2" src="game-ring.png"  style="display: none;">
+                </a>
+
+                <a id="controle-print2" href="#" onclick="printGame3()" ><img id="controleSprite3" src="game-ring.png"  style="display: none;">
+                </a>
+
+                <a id="controle-print2" href="#" onclick="printGame4()" ><img id="controleSprite4" src="game-ring.png"  style="display: none;">
+                </a>
+                
+                <button id="quit" style="display: none;" onclick="quitGame()">Quit
+                   
+                </button>
+                <p id="quitMessage" style="display: none;">Thanks For Playing my Website MiniGame</p>
+                
+            </section> <!--Acaba aqui o MiniGame Print o Map-->
+
+            <a id="startShooter" href="ShooterGame.html" target="_parent">Jogo de tiro</a>
+       <body>
+        
+
+        </body>
+    </head>
+    
+    <script>
+        sprite = new Sprite ();
+
+        sprite = src
+        function interact (){
+            var img , txt;
+            alert("Hi! I'm Knucles");
+            alert("I will be your guide to learn these \nGamePlay 🎮");
+            document.getElementById("NPC").src = "npc2.png";
+            document.getElementById("sprite-button").style.display = "block";
+            document.getElementById("sprite-button").innerHTML ='Press 1';
+            document.getElementById("texts").style.display = "none";
+
+            
+            
+             }
+             function cont_interact() {
+                var key , txt , x;
+                
+                key = prompt ("Are you ready? (PRESS button 1) ");
+                if(key === '1') {
+                    alert("Ok!\n\nBe Welcome to Play and Print All more gaming 🎨");
+                }
+                
+                alert("See ya! 😈 ");
+                document.getElementById("sprite-button").innerHTML = "Run";
+                document.getElementById("sprite-button").style.display = "none";
+
+            }
+            function printGame1(){
+                
+                document.getElementById('jogo-image').style.background= "rgb(0, 140, 255)";
+                document.getElementById("NPC").src = "npc.png";
+                alert("\n💙 Pinto azul");
+                document.getElementById("controleSprite").style.display = "none";
+                document.getElementById("controleSprite2").style.display = "block";
+            }
+            function printGame2(){
+                
+                document.getElementById('jogo-image').style.background= "rgb(134, 2, 191)";
+                document.getElementById("NPC").src = "npc.png";
+                alert("\n🍇 Pinto Roxo");
+                document.getElementById("controleSprite2").style.display = "none";
+                document.getElementById("controleSprite3").style.display = "block";
+            }
+
+            function printGame3(){
+                
+                document.getElementById('jogo-image').style.background= "rgb(232, 39, 39)";
+                document.getElementById("NPC").src = "npc.png";
+                alert("\n🧡 Pinto Vermelho");
+                document.getElementById("controleSprite3").style.display = "none";
+                document.getElementById("controleSprite4").style.display = "block";
+            }
+            function printGame4(){
+                
+                document.getElementById('jogo-image').style.backgroundImage= "rgb(199, 199, 199)";
+                document.getElementById("NPC").src = "npc.png";
+                alert("\n🖤 Pinto cinza");
+                document.getElementById("controleSprite4").style.display = "none";
+                
+                document.getElementById("end").style.display = "block";
+                alert("🌟 PARABÉNS  🌟");
+                alert("Você concluiu 🎨 O Modo PINTAR"); 
+                alert("+10 points");
+                alert("+100xp");
+                alert("MiniGame capt.1 📩 \nSuccess");
+                document.getElementById("quit").style.display = "block";
+                document.getElementById("quitMessage").style.display = "block";
+                alert( "🎮\nNOW! Hey!\n We're running to a Next Challenge");
+                document.getElementById("nuvem-image").style.display = "none";
+                document.getElementById("NPC").style.display = "none";
+                document.getElementById("Sprite").style.right= "360";
+
+               
+            }
+            
+            function quitGame() {
+                document.getElementById("jogo-image").style.display = "none";
+                document.getElementById("ShooterGame").style.display = "block";
+            }
+            
+            function startShooter() {
+                document.getElementById("jogo-image").style.display = "none";
+                document.getElementById("ShooterGame").style.display = "block";
+                
+            }
+             
+
+    </script>
+</html>

@@ -1,0 +1,56 @@
+*{
+    background-color: rgb(255, 255, 255);
+    font-family: myGameFont;
+    max-width: 1000px;
+    max-height: 1000px;
+   
+    
+}
+
+@font-face {
+    font-family: myGameFont;
+    src: url(VeniteAdoremus-rgRBA.ttf);
+}
+
+body {
+    margin-left: 35%;
+    width: 900px;
+    height: 800px;
+    background: linear-gradient(to top, rgb(29, 29, 29), rgb(79, 79, 85));
+}
+
+#box{
+    background-color: grey;
+    margin-left: 7%;
+    display: inline;
+    margin-top: 3%;
+}
+
+#arma-comum{
+    box-shadow: 2px 2px 2px 5px rgb(136, 136, 136);
+    background: linear-gradient(to left , rgb(41, 189, 0), rgb(22, 99, 0) );
+    width: 200px;
+    height: 100px;
+}
+
+#arma-nome{
+    text-shadow: 2px 2px 3px black;
+    color: rgb(255, 255, 255);
+    background-color: grey;
+    font-weight: bold;
+}
+
+#arma-raro{
+    box-shadow: 2px 2px 2px 5px rgb(136, 136, 136);
+    background: linear-gradient(to left , rgb(0, 157, 255), rgb(0, 68, 255) );
+    width: 200px;
+    height: 100px;
+}
+
+
+#arma-lendario{
+    box-shadow: 2px 2px 2px 5px rgb(136, 136, 136);
+    background: linear-gradient(to left , rgb(134, 55, 171), rgb(190, 37, 250) );
+    width: 200px;
+    height: 100px;
+}

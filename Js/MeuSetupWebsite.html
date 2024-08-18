@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SETUP-info-WEBSITE</title>
+        <meta charset="UTF-8">                              
+        <meta content="width=device-width"> <!--ajusta a largura do viewport para ser igual à largura da tela do dispositivo (o que é essencial para um layout responsivo).-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        
+        <div id="menu">
+        <a id="titulo-menu" href="MeuSetupWebsite.html" target="_self" style="text-decoration: none;">
+            Meu    <i style="color:gray;" class="bi bi-pc-display"></i> Setup <p style="color: green; font-size: 33px; ">Website</p>
+        </a>
+       </div>
+       <div id = clickme>
+        <ul>
+            <a href="#cpu"> <li>CPU</li></a>
+            <a href="#monitor"><li></li>Monitor</li></a>
+            <a href="#gpu"><li></li>GPU</li></a>
+            <a href="#memoria"><li></li>RAM</li></a>
+            <a href="#animação"><li>*GamePage*</li></li></a>
+            <a href="#"><li></li>Audio</li></a>
+            <a href="#"><li></li>Mouse</li></a>
+            <a href="#"><li></li>Teclado</li></a>
+            
+        </ul>
+    </div>
+        
+        
+        <div id="corpo">
+        
+        <div id="meu-texto">
+
+            <h2 id="titulo-texto" style="margin-left:100px ;">
+            Meu Desktop Specs (Especificações)
+            </h2>
+            <h3>Aqui encontraremos várias das Especificações do meu Computador</h3>
+            <p>
+            É necessário apresentar os detalhes de cada componente , podemos começar com as peças físicas (Hardware)
+            </p>
+            <p> ainda que também seja importante conhecer os Softwares instalados no meu Setup nessa Página, alguns recursos se limitarão a informações de Hardware por enquanto.
+            </p>
+
+                <!--CPU PROCESSADOR-->
+                <h4 id="cpu">Processador
+                AMD Ryzen 5 5600X 
+                Especificações<p style="color: rgb(252, 111, 3);">Processador</p> Velocidade: 3.5 Ghz 
+                <p>Núcleos: 6 Cores</p>
+                <p>N° de threads 12 Threads</p>
+                <img src="amd-ryzen.png" width="400" height="300" style="margin-left: 20%;">
+                </h4>
+                Processador perfeito para maximar performance com Games, e também renderização de video e stream.
+            
+                <!--GPU Placa Video-->
+                <h5 id="gpu" style= "font-size: 17px;"> GeForce GTX 1660 Ti Especificações</h5>
+                <p style="font-weight: bold; color: green; font-size: 17px;">Placa de Video / GPU</p>
+                <p style="font-weight: bold";>Memória: 6GB GDDR6</p>
+                <p style="font-weight: bold";>NVIDIA CUDA® Cores: 1.536</p>
+                <p style="font-weight: bold";>Output: HDMI / DisplayPort</p>
+                <p style="font-weight: bold";>GameReady DRIVERS</p>
+
+                <img src="gtx-1660.jpg" width="400" height="300" style="margin-left: 20%;">
+
+                <p>A GPU GTX 1660 Ti é uma tecnologia ultra potente em rodar Games de atual geração, jogos atuais em 1080p com qualidade gráfica alta e com performance acima de 100 FPS (+100 quadros por segundo). </p>
+                <p>Para configuração de Video em gráficos Ultra  a performance desce um pouco , mas ainda consegue entregar uma experiência fluída com 60 quadros por segundo (60 FPS Maximum Settings).</p>
+            
+                <!--MEMORIA RAM-->
+                <h6 id="memoria" style="font-size: 19px;">Memoria RAM Especificações</h6>
+                <p id="Ram" style="font-weight: bold; background-image: linear-gradient(to right, violet, green, yellow, orange , red, blue, indigo, violet); padding: 40px; font-size: 17px; text-align: center; color: aliceblue; text-shadow: 1px 1px black;">HyperX Fury 16GB DDR4 </p>
+                
+                             <!--Botões muda de cor a Memória-->
+
+                                                <div id= coresBotao style="margin-left: 60px; padding-left: 100px;">
+                <button onclick="changeBlack()" style="background-color: rgb(0, 0, 0);color: white; box-shadow: 1px 1px 4px rgb(75, 75, 75); font-family:fantasy; width: 80px; height: 30px;border:5px ;">RamBlack</button>
+
+                <button onclick="changeGold()" style="background-color: rgb(219, 199, 18); box-shadow: 1px 1px 4px rgb(75, 75, 75); font-family:fantasy; color: rgb(0, 0, 0); width: 80px; height: 30px; border: 5px ; margin-left: 20px;">RamGold</button>
+
+                <button onclick="changeWhite()" style="background-color: rgb(255, 255, 255);color: black; box-shadow: 1px 1px 4px rgb(75, 75, 75); font-family:fantasy;width: 80px; height: 30px; border: 5px ; margin-left: 20px;">RamWhite</button>
+
+                <button onclick="changeBlue()" style="background-color: rgb(9, 34, 255);color: rgb(255, 255, 255); box-shadow: 1px 1px 4px rgb(75, 75, 75); font-family:fantasy;width: 80px; height: 30px; border: 5px ; margin-left: 20px;">RamBlue</button>                                    
+
+                <button onclick="changeGray()" style="background-color: rgb(73, 73, 73);color: rgb(170, 170, 170); box-shadow: 1px 1px 4px rgb(75, 75, 75); font-family:fantasy;width: 80px; height: 30px; border: 5px ; margin-left: 20px;">RamGray</button>                                    
+
+
+                                                    </div>       
+                 <p style="font-weight: bold ; color: rgb(255, 255, 255); text-shadow: 1px 1px 3px  black;";>Memória RAM: x2 slots (HYPERX 8GB DDR4 2400MHz)</p>
+                <p> Tecnologia de memória em alto desempenho para Desktop de atual geração, os dois slots de 8gb funcionam juntos em 2400Mhz.
+                <p>A parte interessante de memórias DDR4 é que com XMP trabalha-se com frequência ideal somando os 16GB é possivel que com Sobrecarga e OverClock fuja da lentidão corriqueira de Setups ultrapassados. </p>
+
+                <img src="memoria-ram.jfif" width="400" height="300" style="margin-left: 20%;">
+
+                <p>A minha Memória Ram HyperX 16GB ddr4 foi um investimento indispensável pro Setup e não pretendo me desfazer delas. </p>
+                </h6>
+
+                <!--Monitor topico-->
+                <hm id="monitor" style= "font-size: 17px; font-weight: bold;">Monitor</hm>
+            <p style="font-weight: bold; color: rgb(160, 160, 160); font-size: 17px; text-shadow: 1px 1px 2px black;">HYE 27'<i class="bi bi-back"></i> </p>
+            <p style="font-weight: bold";>Tamanho da Tela: 27"</p>
+            <p style="font-weight: bold";>Resolução: 1920x1080</p>
+            <p style="font-weight: bold";>Proporção de Tela: 16:9</p>
+            <p style="font-weight: bold";>Taixa de Atualização: 165Hz</p>
+            <p style="font-weight: bold";>Tempo de resposta: 1ms</p>
+            <p style="font-weight: bold";>Tecnologia: G-SYNC, FreeSync</p>
+            <p style="font-weight: bold";>Conexão: HDMI , DisplayPort, Aux</p>
+            <img src="monitor-hye.jpg" width="400" height="400" style="margin-left: 20%";>      
+                
+
+            </div> <!-- Encerra divisão reservada para o  texto \ div meu-texto -->
+            
+                        
+                                <!--*GamePage*--Animação Interativa-->
+
+            <div id="Anime">
+                <ha id="animação" style= "font-size: 35px; font-family:cursive ;  text-shadow: 2px 2px 4px rebeccapurple; color: azure; margin-left: 36%;">Vamos ao Entretenimento ?</ha>
+                <p style="margin-left: 21%; font-family:cursive ; font-size: 25px;">Nessa seção do Website, criaremos um sistema com interação do usuário.</p>
+                <p style="margin-left: 21%; font-family:cursive ; font-size: 25px;">Podemos enxergar como um "MiniGame" em que tu vai clickando nos controladores/buttons desse site e acontecem Interações que a página devolve.</p>
+                <p id = "GameManual" style="color: greenyellow;"></p>
+
+                <button onclick="PlayGame()" style="margin-left: 44%; padding-left: 45px; padding-right: 45px;height: 20px;
+                background-color: rebeccapurple; color: white;">NewGame
+                </button>
+                
+                <a id="miniGame" href="GameSetupWebsite.html" target="_blank" style="margin-left: 44%; padding-left: 45px; padding-right: 45px;height: 20px;color: rgb(0, 247, 255); text-decoration: none;"></a>
+                
+                <div id="anime-bot">
+                <button id = "AnimeBut" onclick="PlayGame();">Start</button>
+                <button id = "AnimeBut" onclick="PointControl();">Controls</button>
+                <button id = "AnimeBut" onclick="Quest();">Manual</button>
+                <button id = "AnimeBut" onclick="QuitGame();">Quit</button>
+                
+                </div>
+
+
+                </div>
+
+                <style>
+
+                    #anime-bot{
+                        display:grid;
+                        justify-content: center;
+                        
+                    }
+                    #AnimeBut {
+                        background-color: blue;
+                        color: rgb(255, 255, 255);
+                        padding-inline: 30px;
+                        padding-top: 25px;
+                        padding-bottom: 25px;
+                        border: 10px 10px orange;
+                        font-size: 20px;
+                        font-weight: bold;
+                        font-family:cursive ;
+                        border: 3px 3px orange;
+                    }
+                    #AnimeBut:hover{
+                        background-color: rgb(0, 81, 255);
+                        color: rgb(8, 8, 8);
+                    }
+                </style>
+            
+            <!--Todo Footer da Page-->
+            <footer id="foot">
+                <div id="foot-in">
+                    <hl style="font-size: 20px; color: rgb(255, 255, 255); text-decoration: none;">
+                        Informações de Contato
+                        <ul>
+                            <li><a>(53)99913-2492</a></li>
+                        </ul>
+                    </hl>
+                    <hl style="font-size: 20px; color: rgb(255, 255, 255); text-decoration: none;">
+                        Ideias de (Hardware)
+                        <ul>
+                            <li><a href="https://www.kabum.com.br/" target="_blank">KaBum!</a></li>
+                            <li><a href="https://www.adrenaline.com.br/" target="_blank">Adrenaline</a></li>
+                            <li><a href="https://www.nvidia.com/pt-br/" target="_blank">NVIDIA</a></li>
+                            <li><a>Computação de Inteligência</a></li>
+                        </ul>
+                    </hl>
+
+                    <hl style="font-size: 20px; color: rgb(255, 255, 255); text-decoration: none;">
+                        Links de Interesse
+                        <ul>
+                            <li><a target="_blank">YouTube</a></li>
+                            <li><a href="https://www.instagram.com/night.arthur.mars/" target="_blank">Instagram</a></li>
+                            <li><a href="https://twitter.com/TheCinesthetic" target="_blank">Twitter</a></li>
+                            <li><a target="_blank">Facebook</a></li>
+                        </ul>
+                    </hl>
+                   
+                </div>
+                
+            </footer>
+
+            <div>
+                <a id="bot" href="#menu">
+                    <i class="bi bi-arrow-up-circle" style="color: green; text-shadow: 1px 1px 4px rgb(51, 255, 0);"></i>
+                </a>
+            </div>
+        </div> <!-- Encerra divisão CORPO BODY onde o texto está inserido-->
+            
+       
+          
+           
+    
+    <body>
+       <script>    <!--Função JS Muda Cor com buttons do elemento MemoriaRam-->
+            function changeBlack() {
+                document.getElementById("Ram").style.color = "black" ;
+            }
+            function changeGold(){
+                document.getElementById("Ram").style.color = "rgb(219, 199, 18)";
+            }
+            function changeWhite(){
+                document.getElementById("Ram").style.color = "white";
+            }
+            function changeGray(){
+                document.getElementById("Ram").style.color = "rgb(191, 191, 191)";
+            }
+            function changeBlue() {
+                document.getElementById("Ram").style.color = "blue";
+            }
+
+            function Quest(){
+                var key;
+                alert(" Hey, User! This is the Game Manual :)\nW're gonna show you some infos\nRead Me");
+                key = prompt("Do you want to Read this ?\nDigite 1:Sim\n\n \nDigite 0/k:Não");
+                if(key==='1'){
+                    alert("Ok!");
+                    document.getElementById("GameManual").innerHTML = "A ideia do MiniGame é ter um personagem em um Mapa ou -Imagem de fundo aonde toda vez que for pressionado uma tecla do Keyboard (podendo ser SPACE , click-de-mouse ou key) a cor do plano de fundo (Background do jogo) muda de cor, é uma ideia simples, Aperte 'SPACE' com o personagem, e a tela muda de cor"
+                }
+            }
+            function PointControl() {
+                alert("Options");
+            }
+            function PlayGame() {
+                var chave; 
+                alert("!New Game!");
+                chave = prompt("Deseja começar agora ? \nDigite 'A' ou '1' pra Iniciar Jogo\n");
+
+                if(chave === '1' || 'a' || 'A'){
+                    alert("Lets Go New Gamer")
+                    document.getElementById("miniGame").innerHTML = 'Click me <i class="bi bi-playstation"></i> ';
+                }
+
+                
+            }
+
+       </script>
+        </body>
+    </head>
+</html>
+
+
+<style>
+    #clickme{
+        bottom: 80%;
+        color: azure;
+        background-color: rgb(0, 0, 0);
+        padding: 10px;
+        opacity: 0.9;
+        justify-content: center;
+    }
+    
+    #clickme a{
+        text-decoration:none;
+        color: green;
+        font-size: 30px;
+        display: inline-block;
+        margin-right: 80px;
+
+    }
+    #clickme ul{
+        list-style: none;
+        margin-right: 15px;
+    }
+    #clickme ul :hover{
+        background-color:rgb(110, 110, 110);
+        padding-right: 15px;
+        padding-left: 10px;
+        
+    }
+    #bot {
+        
+        position: fixed;
+        top: 45%;
+        left: 85%;
+        margin-top: 200px;
+        margin-left: 70px;
+    }           
+   
+    body{
+        font-family: sans-serif;
+        }
+       
+    #corpo{
+        margin: 0 auto;
+        padding: 0;
+        max-width: 1400px;
+        max-height: 4000px;
+        background-color: rgb(217, 217, 217);
+        
+    }    
+    #meu-texto{
+      margin-left: 25%;
+      margin-right: 20%;
+      font-family: sans-serif;
+      
+    }
+    #Anime{
+        margin-top: 75px;
+        background-image: linear-gradient(to bottom, indigo, blue, indigo);
+        padding: 10% 50px;
+        
+    }
+  #menu {
+        background-color: black;
+        width: 100%;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #titulo-menu{
+        color: white;
+        top: 45%;
+        text-align: center;
+        font-size: 40px;
+    }
+   
+    
+   #lista-menu{
+    color: rgb(0, 0, 0);
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 100%;
+    
+    }
+    
+    
+   #lista-menu li{
+    margin: 20px;
+    list-style: none
+}
+   #lista-menu li a{
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+   }
+   #lista-menu li a:hover{
+   background-color:red;
+   padding-left: 35px;
+   padding-right: 35px;
+   }
+
+   #nav-menu{
+    height: 1000px;
+    width: 200px;
+    background-color: rgb(61, 61, 61);
+    padding: 10px 0 ;
+    top: 10%;
+   }
+   #foot{
+        position:relative;
+        background-color: #000000;
+        margin-top: 40%;
+        padding: 10px 10%;
+        max-height: 600px;
+        
+   }
+   #foot-in {
+    display: flex;
+    padding-top: 50px;
+    
+    }
+    #foot-in hl {
+    margin-left: 165px;
+    justify-content: center;
+    }
+    #foot-in li a{
+        color: rgb(119, 119, 119);
+        text-decoration: none;
+    }
+
+</style>
